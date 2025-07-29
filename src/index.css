@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+/* css custom style */
+
+@font-face {
+  font-family: "Lalezar";
+  src: url("../public/fonts/Lalezar-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "kalam";
+  src: url("../public/fonts/B\ kalaam\ Kandoo.TTF") format("truetype");
+  font-display: swap;
+}
+
+@theme {
+  --font-lalezar: "Lalezar", cursive;
+  --color-white-50: "#f0f0f0";
+  --color-regal-blue: "#471AAA";
+}
+
+:root {
+  --white-50: "#f0f0f0";
+  --blue: "#471AAA";
+  --lalezar: "Lalezar";
+}
+
+body {
+  background-color: "#f0f0f0";
+
+}
+
+*,
+html,
+body {
+  font-family: "Lalezar";
+}
+
+/* css custom style */
+
+/* Grid Layout */
+
+.section-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 8px;
+  /* color: #000000b1; */
+}
+
+.grid-item--sidebar {
+  grid-row: span 5 / span 5;
+}
+
+.grid-item--header {
+  grid-column: span 4 / span 4;
+}
+
+.grid-item--main {
+  grid-column: span 4 / span 4;
+  grid-row: span 4 / span 4;
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+
+/* Grid Layout */
+
+/* style custom */
+
+.active {
+  background-color: blueviolet;
+}
+
+/* style custom */
