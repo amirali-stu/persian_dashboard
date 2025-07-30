@@ -15,7 +15,7 @@ import Home from "./Pages/Home";
 import Orders from "./Pages/Orders";
 import Products from "./Pages/Products";
 import Users from "./Pages/Users";
-import Notfound from "./Pages/Notfound";
+import NotFoundPage from "./Pages/NotFoundPage";
 
 // import pages
 
@@ -55,7 +55,7 @@ function App() {
     { path: "/orders", element: <Orders /> },
     { path: "/discounts", element: <Discounts /> },
     { path: "/comments", element: <Comments /> },
-    { path: "*", element: <Notfound /> },
+    { path: "*", element: <NotFoundPage /> },
   ];
 
   // routers
@@ -63,7 +63,7 @@ function App() {
   const routers = useRoutes(routes);
 
   return (
-    <div className="flex h-screen bg-[#f0f0f0]">
+    <div className="flex bg-[#f0f0f0]">
       <SidebarContext.Provider value={{ isOpen, setIsOpen }}>
         {/* Sidebar */}
         <div
