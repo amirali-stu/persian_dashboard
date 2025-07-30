@@ -10,7 +10,7 @@ export default function NotFoundPage() {
         <div className="flex flex-col items-center">
           <img
             src={img}
-            alt="مرد گیج 404"
+            alt="خطای 404"
             className="w-72 md:w-96 mb-6 rounded-xl"
           />
           <h1 className="text-4xl md:text-5xl font-extrabold text-blue-800 mb-2">

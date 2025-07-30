@@ -6,7 +6,6 @@ import Products from "../Pages/Products";
 import Users from "../Pages/Users";
 
 const routes = [
-  { path: "/", element: <Home /> },
   { path: "/users", element: <Users /> },
   { path: "/products", element: <Products /> },
   { path: "/orders", element: <Orders /> },
