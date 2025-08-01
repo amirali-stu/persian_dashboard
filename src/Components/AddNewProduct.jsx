@@ -78,7 +78,7 @@ const AddNewProduct = ({ title }) => {
         <div className="flex justify-end">
           <button
             type="submit"
-            className="bg-[#471AAA] text-white border-black border-2 px-3 py-2 rounded-lg cursor-pointer my-2"
+            className="bg-[#471AAA] text-white border-black border-2 px-3 py-2 rounded-lg cursor-pointer my-2 max-md:mt-5"
           >
             ثبت محصول
           </button>

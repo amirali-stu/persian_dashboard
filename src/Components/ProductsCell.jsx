@@ -9,11 +9,11 @@ function ProductsCell({ img, title, price, count }) {
       <td>{title}</td>
       <td>{price}$</td>
       <td>{count}</td>
-      <div className="flex items-center gap-x-5 *:px-5 *:py-2 *:rounded-md *:border-2 *:border-black *:cursor-pointer *:bg-[#471AAA] *:text-white col-span-2 md:mx-0">
+      <td className="flex items-center gap-x-5 *:px-5 *:py-2 *:rounded-md *:border-2 *:border-black *:cursor-pointer *:bg-[#471AAA] *:text-white col-span-2 md:mx-0">
         <button>ویرایش</button>
         <button>حذف</button>
         <button>جزییات</button>
-      </div>
+      </td>
     </tr>
   );
 }

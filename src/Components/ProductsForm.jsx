@@ -8,7 +8,7 @@ import ProductsCell from "./ProductsCell";
 function ProductsForm() {
   return (
     <div className="w-full bg-white rounded-md px-3 py-2">
-      <table className="">
+      <table>
         <thead>
           <tr className="grid grid-cols-6 *:text-start items-center px-10 mr-4 py-10 text-lg">
             <th>عکس</th>
@@ -17,7 +17,7 @@ function ProductsForm() {
             <th>تعداد</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="grid grid-cols-1">
           <ProductsCell img={laptop} title={"laptop"} price={120_000} count={15}/>
           <ProductsCell img={car} title={"car"} price={1_820_000} count={95}/>
         </tbody>
