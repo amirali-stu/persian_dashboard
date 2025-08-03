@@ -4,7 +4,6 @@ import SidebarContext from "../Context/Context";
 
 function Overlay() {
   const contextData = useContext(SidebarContext);
-  console.log(!contextData.isOpen);
 
   const hideSidebar = () => {
     contextData.setIsOpen(false);

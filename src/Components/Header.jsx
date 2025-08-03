@@ -5,15 +5,21 @@ import { FaMoon, FaSun } from "react-icons/fa";
 import { HiMenuAlt3 } from "react-icons/hi";
 import SidebarContext from "../Context/Context";
 
-function Header() {
+function Header({ dark, setDark }) {
+  const contextData = useContext(SidebarContext);
 
-  const contextData = useContext(SidebarContext)
+  const toggleTheme = () => {
+    setDark(!dark);
+  };
 
   return (
     <div className="w-full h-full flex items-center justify-between md:px-10 max-md:px-3 py-5 bg-[#f0f0f0]">
       <div className="flex items-center gap-x-3">
         {/* Menu icon */}
-        <button className="max-md:flex md:hidden items-center justify-center w-10 h-10 bg-[#471AAA] text-white rounded-lg border-2 border-black cursor-pointer" onClick={() => contextData.setIsOpen(!contextData.isOpen)}>
+        <button
+          className="max-md:flex md:hidden items-center justify-center w-10 h-10 bg-[#471AAA] text-white rounded-lg border-2 border-black cursor-pointer"
+          onClick={() => contextData.setIsOpen(!contextData.isOpen)}
+        >
           <HiMenuAlt3 size={20} />
         </button>
         <img src={profile} alt="profile" className="w-11 h-11 rounded-full" />
@@ -41,8 +47,8 @@ function Header() {
         <button className="flex items-center justify-center w-10 h-10 bg-[#471AAA] text-white rounded-lg border-2 border-black cursor-pointer">
           <IoIosNotifications size={20} />
         </button>
-        <button className="flex items-center justify-center w-10 h-10 bg-[#471AAA] text-white rounded-lg border-2 border-black cursor-pointer">
-          <FaSun size={20} />
+        <button className="flex items-center justify-center w-10 h-10 bg-[#471AAA] text-white rounded-lg border-2 border-black cursor-pointer" onClick={toggleTheme}>
+          {dark ? <FaMoon size={20} /> : <FaSun size={20} />}
         </button>
       </div>
     </div>

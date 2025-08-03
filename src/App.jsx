@@ -43,6 +43,7 @@ function App() {
   // Hooks
 
   const [isOpen, setIsOpen] = useState(false);
+  const [isDark, setIsDark] = useState(false);
 
   // Hooks
 
@@ -63,7 +64,7 @@ function App() {
   const routers = useRoutes(routes);
 
   return (
-    <div className="flex bg-[#f0f0f0]">
+    <div className={`flex bg-[#f0f0f0] ${isDark && "dark"}`}>
       <SidebarContext.Provider value={{ isOpen, setIsOpen }}>
         {/* Sidebar */}
         <div
@@ -78,7 +79,7 @@ function App() {
         <div className="flex-1 md:pr-64">
           {/* Header */}
           <div className="">
-            <Header />
+            <Header dark={isDark} setDark={setIsDark}/>
           </div>
 
           {/* Body content below the header */}

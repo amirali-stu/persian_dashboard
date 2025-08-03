@@ -22,7 +22,7 @@ function Sidebar() {
 
   return (
     <div
-      className={`h-screen right-0 w-[250px] bg-[#471AAA] z-50 max-md:shadow-[0px_0px_20px_#000000b1]`}
+      className={`h-screen right-0 w-[250px] bg-[#471AAA]  z-50 max-md:shadow-[0px_0px_20px_#000000b1]`}
     >
       <h1 className="text-white text-2xl text-center py-3">
         به داشبورد خود خوش آمدید
