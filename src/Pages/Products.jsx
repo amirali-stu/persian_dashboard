@@ -10,7 +10,7 @@ function Products() {
   return (
     <div className="flex flex-col gap-y-5">
       <AddNewProduct title={"محصول جدید"} />
-      {products.length ? <ProductsForm /> : false}
+      <ProductsForm />
     </div>
   );
 }

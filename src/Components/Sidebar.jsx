@@ -31,7 +31,7 @@ function Sidebar() {
       <ul className="*:pr-3 *:py-3 *:text-lg *:w-full *:cursor-pointer flex flex-col gap-y-2 mt-2 *:transition-all">
         <NavLink
           className={({ isActive }) =>
-            `flex items-center gap-x-2 ${isActive ? "active" : ""}`
+            `flex items-center gap-x-2 ${isActive ? "active_menu_sidebar" : ""}`
           }
           to={"/"}
         >
@@ -40,7 +40,7 @@ function Sidebar() {
         </NavLink>
         <NavLink
           className={({ isActive }) =>
-            `flex items-center gap-x-2 ${isActive ? "active" : ""}`
+            `flex items-center gap-x-2 ${isActive ? "active_menu_sidebar" : ""}`
           }
           to={"/products"}
         >
@@ -49,7 +49,7 @@ function Sidebar() {
         </NavLink>
         <NavLink
           className={({ isActive }) =>
-            `flex items-center gap-x-2 ${isActive ? "active" : ""}`
+            `flex items-center gap-x-2 ${isActive ? "active_menu_sidebar" : ""}`
           }
           to={"/comments"}
         >
@@ -58,7 +58,7 @@ function Sidebar() {
         </NavLink>
         <NavLink
           className={({ isActive }) =>
-            `flex items-center gap-x-2 ${isActive ? "active" : ""}`
+            `flex items-center gap-x-2 ${isActive ? "active_menu_sidebar" : ""}`
           }
           to={"/users"}
         >
@@ -67,7 +67,7 @@ function Sidebar() {
         </NavLink>
         <NavLink
           className={({ isActive }) =>
-            `flex items-center gap-x-2 ${isActive ? "active" : ""}`
+            `flex items-center gap-x-2 ${isActive ? "active_menu_sidebar" : ""}`
           }
           to={"/orders"}
         >
@@ -76,7 +76,7 @@ function Sidebar() {
         </NavLink>
         <NavLink
           className={({ isActive }) =>
-            `flex items-center gap-x-2 ${isActive ? "active" : ""}`
+            `flex items-center gap-x-2 ${isActive ? "active_menu_sidebar" : ""}`
           }
           to={"/discounts"}
         >

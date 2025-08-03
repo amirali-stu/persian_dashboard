@@ -27,7 +27,6 @@
 
 body {
   background-color: "#f0f0f0";
-
 }
 
 *,
@@ -67,8 +66,14 @@ body {
 
 /* style custom */
 
-.active {
+.active_menu_sidebar {
   background-color: blueviolet;
+}
+.active_modal {
+  @apply flex;
+}
+.active_modal > div {
+  @apply scale-105;
 }
 
 /* style custom */
